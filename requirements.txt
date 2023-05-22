@@ -1,1 +1,4 @@
 pygame
+requests
+beautifulsoup4
+pymysql

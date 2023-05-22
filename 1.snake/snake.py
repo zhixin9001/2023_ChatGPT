@@ -77,7 +77,7 @@ def game_loop():
                     x1_change = 0
 
         while game_close == True:
-            game_display.fill(white)
+            game_display.fill(black)
             message("你输了，按 Q 退出或按 C 重新开始", red)
             pygame.display.update()
 
@@ -118,13 +118,13 @@ def game_loop():
                 game_close = True
 
         # 更新游戏窗口
-        game_display.fill(white)
+        game_display.fill(black)
         pygame.draw.rect(game_display, red, [foodx, foody, snake_block_size, snake_block_size])
         our_snake(snake_block_size, snake_List)
         pygame.display.update()
 
         # 控制蛇移动速度
-        clock.tick(10)
+        clock.tick(5)
 
     pygame.quit()
     quit()
