@@ -2,3 +2,6 @@ pygame
 requests
 beautifulsoup4
 pymysql
+pandas
+scikit-learn
+lightgbm
